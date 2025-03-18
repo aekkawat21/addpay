@@ -1,0 +1,4 @@
+RewriteEngine on
+
+# รีไรต์ URL จาก root ไปที่ index.html
+RewriteRule ^$ /index.html [L]
