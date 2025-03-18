@@ -1,4 +1,4 @@
-RewriteEngine on
-
-# รีไรต์ URL จาก root ไปที่ index.html
-RewriteRule ^$ /index.html [L]
+Options -MultiViews
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.html [QSA,L]
